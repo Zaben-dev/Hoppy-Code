@@ -2,15 +2,19 @@
   "name": "hoppy-code",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --exec tsx packages/server/src/server.ts"
   },
   "keywords": [],
   "author": "",
+  "type": "module",
   "license": "ISC",
   "workspaces": [
     "packages/server",
     "packages/client"
-  ]
+  ],
+  "devDependencies": {
+    "npm": "^10.9.0",
+    "typescript": "^5.6.3"
+  }
 }
