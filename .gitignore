@@ -2,5 +2,7 @@ node_modules/
 .env
 packages/server/dist
 packages/client/dist
+packages/client/.angular
+packages/client/.vscode
 packages/server/tsconfig.tsbuildinfo
 packages/client/tsconfig.tsbuildinfo

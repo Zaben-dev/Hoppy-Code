@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "nodemon --exec tsx packages/server/src/server.ts"
+    "start:server": "nodemon --exec tsx packages/server/src/server.ts",
+    "start:client": "npm --workspace=packages/client run start"
   },
   "keywords": [],
   "author": "",
