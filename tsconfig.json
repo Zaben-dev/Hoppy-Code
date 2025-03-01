@@ -9,11 +9,16 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@hoppy-code/types": ["packages/shared-types/src"]
+    }
   },
   "type": "module",
   "references": [
     { "path": "./packages/server/tsconfig.json" },
-    { "path": "./packages/client/tsconfig.json" }
+    { "path": "./packages/client/tsconfig.json" },
+    { "path": "./packages/shared-types/tsconfig.json" }
   ]
 }
