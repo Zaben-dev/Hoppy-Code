@@ -12,10 +12,14 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@hoppy-code/types": "1.0.0",
     "@prisma/client": "^5.21.1",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
     "express": "^4.21.0",
-    "zod": "^3.23.8",
-    "@hoppy-code/types": "1.0.0"
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
