@@ -18,10 +18,10 @@
     "target": "ES2022",
     "module": "ES2022",
     "paths": {
-      "@hoppy-code/types": ["../../packages/shared-types/dist"]
+      "@hoppy-code/types": ["../../packages/shared/dist"]
     }
   },
-  "exclude": ["../../packages/shared-types/**/*"],
+  "exclude": ["../../packages/shared/**/*"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

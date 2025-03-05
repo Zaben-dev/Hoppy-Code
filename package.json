@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build:types": "npm --workspace=packages/shared-types run build",
-    "watch:types": "npm --workspace=packages/shared-types run build:watch",
+    "build:types": "npm --workspace=packages/shared run build",
+    "watch:types": "npm --workspace=packages/shared run build:watch",
     "start:server": "nodemon --exec tsx packages/server/src/server.ts",
     "start:client": "npm --workspace=packages/client run start"
   },
@@ -15,11 +15,11 @@
   "workspaces": [
     "packages/server",
     "packages/client",
-    "packages/shared-types"
+    "packages/shared"
   ],
   "paths": {
-    "@hoppy-code/types": [
-      "./packages/shared-types/dist"
+    "@hoppy-code/shared": [
+      "./packages/shared/dist"
     ]
   },
   "devDependencies": {
