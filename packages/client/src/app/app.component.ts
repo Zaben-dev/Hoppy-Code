@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Post } from '@hoppy-code/types';
+import { Post } from '@hoppy-code/shared';
 
 @Component({
   selector: 'app-root',

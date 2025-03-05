@@ -1,4 +1,6 @@
-export const handleCreatePost = async (req: any, res: any) => {
+import { Request, Response } from 'express';
+
+export const handleCreatePost = async (req: Request, res: Response) => {
   const { title, content, published } = req.body;
   res.send(title);
 };

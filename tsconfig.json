@@ -12,7 +12,7 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "@hoppy-code/types": ["packages/shared/src"]
+      "@hoppy-code/shared": ["packages/shared/src"]
     }
   },
   "type": "module",

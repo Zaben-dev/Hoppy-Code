@@ -12,7 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@hoppy-code/types": "1.0.0",
+    "@hoppy-code/shared": "*",
     "@prisma/client": "^5.21.1",
     "@types/swagger-jsdoc": "^6.0.4",
     "@types/swagger-ui-express": "^4.1.8",

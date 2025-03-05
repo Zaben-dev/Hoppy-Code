@@ -18,7 +18,7 @@
     "target": "ES2022",
     "module": "ES2022",
     "paths": {
-      "@hoppy-code/types": ["../../packages/shared/dist"]
+      "@hoppy-code/shared": ["../../packages/shared/dist"]
     }
   },
   "exclude": ["../../packages/shared/**/*"],
