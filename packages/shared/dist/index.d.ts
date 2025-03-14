@@ -1,3 +1,2 @@
-export interface Post {
-    name: string;
-}
+export * from './interfaces/common-response';
+export * from './schemas/post';

@@ -10,8 +10,14 @@ const options: swaggerJSDoc.Options = {
       version: '1.0.0',
       description: 'My API Documentation',
     },
+    servers: [
+      {
+        url: 'http://localhost:3001',
+        description: 'Development server',
+      },
+    ],
   },
-  apis: ['./routes/*.ts'],
+  apis: ['./packages/server/src/**/*.ts'],
 };
 
 const swaggerSpec = swaggerJSDoc(options);

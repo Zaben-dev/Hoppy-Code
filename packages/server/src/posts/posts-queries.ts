@@ -1,7 +1,8 @@
 import { PrismaClient } from '@prisma/client';
+import { Post } from '@hoppy-code/shared/src/schemas/post';
 
 const prisma = new PrismaClient();
 
-// async function createPost(title: string, content: string, published: boolean) {
-//   const post = await prisma.post.create({});
-// }
+export const savePost = async (data: Post) => {
+  return prisma.post.create({ data });
+};

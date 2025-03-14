@@ -1,12 +1,15 @@
 import { z } from 'zod';
 export declare const postSchema: z.ZodObject<{
-    name: z.ZodString;
+    id: z.ZodOptional<z.ZodString>;
+    title: z.ZodString;
     summary: z.ZodString;
 }, "strip", z.ZodTypeAny, {
-    name: string;
+    title: string;
     summary: string;
+    id?: string | undefined;
 }, {
-    name: string;
+    title: string;
     summary: string;
+    id?: string | undefined;
 }>;
 export type Post = z.infer<typeof postSchema>;
