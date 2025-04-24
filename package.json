@@ -6,7 +6,8 @@
     "build:types": "npm --workspace=packages/shared run build",
     "watch:types": "npm --workspace=packages/shared run build:watch",
     "start:server": "nodemon --exec tsx packages/server/src/server.ts",
-    "start:client": "npm --workspace=packages/client run start"
+    "start:client": "npm --workspace=packages/client run start",
+    "migrate": "npx prisma migrate dev"
   },
   "keywords": [],
   "author": "",

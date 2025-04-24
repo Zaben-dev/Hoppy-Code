@@ -9,6 +9,6 @@
       "@hoppy-code/shared": ["../../packages/shared/dist"]
     }
   },
-  "include": ["src/**/*", "../shared/src/schemas/post.ts"],
+  "include": ["src/**/*", "../shared/src/schemas/posts.ts"],
   "exclude": ["dist", "../../packages/shared/**/*"]
 }

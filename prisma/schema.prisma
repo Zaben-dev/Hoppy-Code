@@ -10,5 +10,10 @@ datasource db {
 model Post {
   id Int @id @default(autoincrement())
   title String
+  coverImageUrl String?
   summary String
+  content String @default("")
+  CreatedAt  DateTime @default(now())
+  UpdatedAt DateTime?
+  tags String[]
 }
