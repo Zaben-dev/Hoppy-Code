@@ -1,7 +1,10 @@
 import express from 'express';
-import { postSchema } from '@hoppy-code/shared/src/schemas/post';
+import {
+  postSchema,
+  postsListItemSchema,
+} from '@hoppy-code/shared/src/schemas/posts';
 import { validateBody } from '../shared/validate-body';
-import { handleCreatePost } from './posts-handlers';
+import { handleCreatePost, handleGetPostsList } from './posts-handlers';
 import { handleError } from '../shared/handle-error';
 const router = express.Router();
 
@@ -49,4 +52,11 @@ router.post(
   handleError
 );
 
+router.get(
+  'posts',
+  express.json(),
+  validateBody(postsListItemSchema),
+  handleGetPostsList,
+  handleError
+);
 export default router;

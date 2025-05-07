@@ -1,2 +1,2 @@
 export * from './interfaces/common-response';
-export * from './schemas/post';
+export * from '@hoppy-code/shared/src/schemas/posts';

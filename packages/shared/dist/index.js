@@ -15,4 +15,4 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./interfaces/common-response"), exports);
-__exportStar(require("./schemas/post"), exports);
+__exportStar(require("@hoppy-code/shared/src/schemas/posts"), exports);
