@@ -8,13 +8,7 @@ export const handleCreatePost = async (
   next: NextFunction
 ) => {
   try {
-    const result = await createPost(req.body);
-    const response: CommonResponse<Post> = {
-      success: true,
-      message: 'Post Created',
-      data: result,
-      error: null,
-    };
+    const response = await createPost(req.body);
     res.status(201).send(response);
   } catch (err) {
     next(err);
