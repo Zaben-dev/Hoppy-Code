@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "composite": true,
+    "noEmit": false,
+    "paths": {
+      "@hoppy-code/shared": ["../../packages/shared/dist"]
+    }
+  },
+  "include": ["src/**/*", "../shared/src/schemas/posts.ts"],
+  "exclude": ["dist", "../../packages/shared/**/*"]
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@hoppy-code/shared": ["packages/shared/src"]
+    }
+  },
+  "type": "module",
+  "references": [
+    { "path": "./packages/server/tsconfig.json" },
+    { "path": "./packages/client/tsconfig.json" },
+    { "path": "./packages/shared/tsconfig.json" }
+  ]
+}

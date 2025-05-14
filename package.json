@@ -2,15 +2,30 @@
   "name": "hoppy-code",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:types": "npm --workspace=packages/shared run build",
+    "watch:types": "npm --workspace=packages/shared run build:watch",
+    "start:server": "nodemon --exec tsx packages/server/src/server.ts",
+    "start:client": "npm --workspace=packages/client run start",
+    "migrate": "npx prisma migrate dev"
   },
   "keywords": [],
   "author": "",
+  "type": "module",
   "license": "ISC",
   "workspaces": [
     "packages/server",
-    "packages/client"
-  ]
+    "packages/client",
+    "packages/shared"
+  ],
+  "paths": {
+    "@hoppy-code/shared": [
+      "./packages/shared/dist"
+    ]
+  },
+  "devDependencies": {
+    "npm": "^10.9.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.6.3"
+  }
 }
